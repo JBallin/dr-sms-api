@@ -8,8 +8,8 @@ const accountSid = process.env.SID;
 const authToken = process.env.AUTH_TOKEN;
 const client = new Twilio(accountSid, authToken);
 
-const createApptMsg = (doctorName, name, date, time, customMsg) => (
-  `Hello ${name}, this is Dr. ${doctorName}'s office reminding you about your appointment on ${date} at ${time}.${customMsg ? `\nNOTE: ${customMsg}` : ''}`
+const createApptMsg = (doctorName, patientName, date, time, customMsg) => (
+  `Hello ${patientName},\nThis is Dr. ${doctorName}'s office reminding you about your appointment on ${date} at ${time}.${customMsg ? `\nNOTE: ${customMsg}` : ''}`
 );
 
 router.post('/', (req, res) => {
