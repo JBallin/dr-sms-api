@@ -13,9 +13,14 @@ const createApptMsg = (doctorName, patientName, date, time, customMsg) => (
 );
 
 router.post('/', (req, res) => {
+  const {
+    phoneNumber, doctorName, patientName, date, time, customMsg,
+  } = req.query;
+  const apptMessage = createApptMsg(doctorName, patientName, date, time, customMsg);
+
   client.messages.create({
-    body: 'Hello from Node',
-    to: process.env.TEST_NUMBER,
+    body: apptMessage,
+    to: phoneNumber,
     from: process.env.TWILIO_NUMBER,
   })
     .then(message => res.send(message));
