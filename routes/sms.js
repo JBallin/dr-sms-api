@@ -15,7 +15,7 @@ const createApptMsg = (doctorName, patientName, date, time, customMsg) => (
 router.post('/', (req, res) => {
   const {
     phoneNumber, doctorName, patientName, date, time, customMsg,
-  } = req.query;
+  } = req.body;
   const apptMessage = createApptMsg(doctorName, patientName, date, time, customMsg);
 
   client.messages.create({
