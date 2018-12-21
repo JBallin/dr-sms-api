@@ -8,7 +8,7 @@ This project has a POST /sms endpoint that accepts a body from a form, which is 
 
 ### Installation
 
-```
+```shell
 $ git clone https://github.com/JBallin/dr-sms-api
 $ cd dr-sms-api
 $ npm install
@@ -20,7 +20,7 @@ $ npm run dev
 
 ### Usage
 
-```
+```shell
 $ brew install httpie
 $ http POST localhost:5492/sms phoneNumber=$YOUR_NUMBER doctorName=Eich patientName=JavaScript date=12/4 time=10am customMsg="Don't forget your implicit coercion!"
 ```
