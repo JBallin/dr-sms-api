@@ -14,7 +14,7 @@ $ cd dr-sms-api
 $ npm install
 $ echo "SID=$YOUR_SID
 AUTH_TOKEN=$YOUR_AUTH_TOKEN
-TWILIO_NUMBER=$YOUR_TWILIO_NUMBER"> .env
+TWILIO_NUMBER=$YOUR_TWILIO_NUMBER" > .env
 $ npm run dev
 ```
 
