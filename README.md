@@ -4,7 +4,7 @@ Built during a 4-hour hackathon at Galvanize (Bootcamp) where we had to use a 3r
 
 While ideating, a doctor called a couple times just to notify me of an upcoming appointment...we decided to create a simple form that would allow the office to save time spent dialing patients and provide a more convenient reminder medium for patients.
 
-This project has a POST /sms endpoint that accepts a body from a form, which is used to send an SMS to the patient.
+This project has a POST `/sms` endpoint that accepts a body from a form, which is used to send an SMS to the patient.
 
 ### Installation
 
