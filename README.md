@@ -27,7 +27,7 @@ $ http POST localhost:5492/sms phoneNumber=$YOUR_NUMBER doctorName=Eich patientN
 
 NOTE: All phone numbers should be in this format: 12813308004
 
-All post requests return the message response from Twilio.
+All POST requests return the message response from Twilio.
 
 ### SMS Screenshot
 
