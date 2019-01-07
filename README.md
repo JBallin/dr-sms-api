@@ -31,7 +31,7 @@ $ curl --data "phoneNumber=$YOUR_NUMBER&doctorName=Eich&patientName=JavaScript&d
 $ http POST localhost:5492/sms phoneNumber=$YOUR_NUMBER doctorName=Eich patientName=JavaScript date=12/4 time=10am customMsg="Don't forget your implicit coercion!"
 ```
 
-NOTE: All phone numbers should be in this format: 12813308004
+> NOTE: All phone numbers should be in this format: 12813308004
 
 All POST requests return the message response from Twilio.
 
