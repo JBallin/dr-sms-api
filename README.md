@@ -20,8 +20,14 @@ $ npm run dev
 
 ### Usage
 
+##### cURL
 ```shell
-$ brew install httpie
+$ curl --data "phoneNumber=$YOUR_NUMBER&doctorName=Eich&patientName=JavaScript&date=12/4&time=10am&customMsg=Don't forget your implicit coercion!" localhost:5492/sms
+```
+
+##### httpie
+
+```shell
 $ http POST localhost:5492/sms phoneNumber=$YOUR_NUMBER doctorName=Eich patientName=JavaScript date=12/4 time=10am customMsg="Don't forget your implicit coercion!"
 ```
 
